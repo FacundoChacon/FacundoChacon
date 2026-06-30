@@ -54,6 +54,17 @@ Proyectos destacados
       <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
     </td>
   </tr>
+  <tr>
+    <td width="100%" colspan="2">
+      <h4><a href="https://github.com/FacundoChacon/Tienda-Electronica">Tienda-Electronica</a></h4>
+      <p>E-commerce de productos electrónicos con carrito de compras, panel de administración y autenticación JWT. Backend con Java/Spring Boot, frontend con React + Tailwind, base de datos MySQL.</p>
+      <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+      <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/>
+      <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white"/>
+    </td>
+  </tr>
 </table>
 Estadísticas de GitHub
 
