@@ -68,6 +68,7 @@ Proyectos destacados
 </table>
 
 <p align="left">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=FacundoChacon&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats"/>
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FacundoChacon&layout=compact&hide_border=true&theme=default" alt="Lenguajes más usados"/>
 </p>
 <p align="left">
