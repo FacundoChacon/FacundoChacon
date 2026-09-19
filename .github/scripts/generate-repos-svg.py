@@ -9,12 +9,14 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.request
 
 OWNER = os.environ.get("OWNER", "FacundoChacon")
 OUT = os.environ.get("OUT", "profile/repos.svg")
 MAX_ROWS = 8
 TIMEOUT = 30
+EXCLUDED = {"arasaka-neon-wallpaper"}
 
 HEADERS = {"User-Agent": "opencode", "Accept": "application/vnd.github+json"}
 token = os.environ.get("GITHUB_TOKEN", "")
@@ -31,8 +33,14 @@ def api(path):
 def commit_count(full_name):
     try:
         _, headers = api(f"/repos/{full_name}/commits?per_page=1")
-    except Exception:
-        return 0
+    except urllib.error.HTTPError as exc:
+        if exc.code == 404:
+            return 0
+        print(f"AVISO: no se pudo contar commits de {full_name} (HTTP {exc.code})", file=sys.stderr)
+        raise
+    except Exception as exc:
+        print(f"AVISO: no se pudo contar commits de {full_name} ({exc})", file=sys.stderr)
+        raise
     link = headers.get("Link") or ""
     m = re.search(r"page=(\d+)>; rel=[\"']last[\"']", link)
     return int(m.group(1)) if m else 1
@@ -42,7 +50,7 @@ def truncate(name, limit=38):
     return name if len(name) <= limit else name[: limit - 1] + "\u2026"
 
 
-def build_svg(rows, total):
+def build_svg(rows, total, n_public, extra_note):
     w, row_h, title_h, head_h, foot_h = 500, 26, 46, 26, 46
     h = title_h + head_h + len(rows) * row_h + foot_h
     parts = [
@@ -69,15 +77,15 @@ def build_svg(rows, total):
         parts.append(f'<text class="cel" x="310" y="{y}">{commits}</text>')
         parts.append(f'<text class="cel" x="398" y="{y}">{date}</text>')
         y += row_h
-    parts.append(f'<text class="tot" x="16" y="{y + 8}">Total de commits: {total} en {len(rows)} repositorios publicos</text>')
-    parts.append(f'<text class="note" x="16" y="{y + 26}">Los repositorios privados no se incluyen (la API publica no los expone).</text>')
+    parts.append(f'<text class="tot" x="16" y="{y + 8}">Total de commits: {total} en {n_public} repositorios publicos</text>')
+    parts.append(f'<text class="note" x="16" y="{y + 26}">{extra_note} Los repositorios privados no se incluyen (la API publica no los expone).</text>')
     parts.append("</svg>")
     return "\n".join(parts)
 
 
 def main():
     repos, _ = api(f"/users/{OWNER}/repos?per_page=100&sort=pushed&type=public")
-    public = [r for r in repos if not r.get("fork")]
+    public = [r for r in repos if not r.get("fork") and r["name"] not in EXCLUDED]
     rows = []
     total = 0
     for r in public:
@@ -87,9 +95,10 @@ def main():
         rows.append((name, n, (r.get("pushed_at") or "")[:10]))
     rows.sort(key=lambda item: item[2], reverse=True)
     rows = rows[:MAX_ROWS]
+    extra_note = f"Solo se muestran los {MAX_ROWS} mas recientes." if len(rows) < len(public) else ""
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
-        f.write(build_svg(rows, total))
+        f.write(build_svg(rows, total, len(public), extra_note))
     print(f"OK {OUT}: {len(rows)} repos, {total} commits totales")
 
 
