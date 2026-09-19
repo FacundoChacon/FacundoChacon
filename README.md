@@ -71,7 +71,7 @@ Proyectos destacados
 Estadísticas de GitHub
 
 <!--
-  Estas dos tarjetas son archivos SVG generados automaticamente por un workflow
+  Estas tarjetas son archivos SVG generados automaticamente por un workflow
   de GitHub Actions (ver .github/workflows/update-readme-stats.yml), que corre
   una vez al dia y las commitea a la carpeta /profile de este mismo repo.
   Esto evita depender del servicio publico de Vercel (github-readme-stats.vercel.app),
@@ -80,6 +80,9 @@ Estadísticas de GitHub
 <p align="left">
   <img height="165" src="./profile/stats.svg" alt="Estadísticas de GitHub"/>
   <img height="165" src="./profile/top-langs.svg" alt="Lenguajes más usados"/>
+</p>
+<p align="left">
+  <img src="./profile/repos.svg" alt="Commits y última actividad por repositorio"/>
 </p>
 <p align="left">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=FacundoChacon&hide_border=true&theme=default" alt="Racha de commits"/>

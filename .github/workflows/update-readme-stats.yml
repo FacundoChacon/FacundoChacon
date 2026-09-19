@@ -34,6 +34,12 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Generar tarjeta de actividad por repositorio
+        run: python3 .github/scripts/generate-repos-svg.py
+        env:
+          OWNER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commitear las tarjetas generadas
         run: |
           git config user.name "github-actions[bot]"

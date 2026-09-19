@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="326" viewBox="0 0 500 326" fill="none" role="img">
+<style>.t{font:600 15px 'Segoe UI',Ubuntu,Sans-Serif;fill:#2f80ed}.hdr{font:600 12px 'Segoe UI',Ubuntu,'Helvetica Neue',Sans-Serif;fill:#586069}.cel{font:500 13px 'Segoe UI',Ubuntu,Sans-Serif;fill:#434d58}.tot{font:600 14px 'Segoe UI',Ubuntu,Sans-Serif;fill:#434d58}.note{font:400 11px 'Segoe UI',Ubuntu,Sans-Serif;fill:#8b949e}</style>
+<rect x="0" y="0" width="500" height="326" rx="6" fill="#fffefe" stroke="#e4e2e2"/>
+<text class="t" x="16" y="30">Actividad por repositorio</text>
+<text class="hdr" x="16" y="64">Repositorio</text>
+<text class="hdr" x="310" y="64">Commits</text>
+<text class="hdr" x="398" y="64">Ultima actividad</text>
+<rect x="0" y="56" width="500" height="26" fill="#f6f8fa"/>
+<text class="cel" x="16" y="72">3-esquinas-frontend</text>
+<text class="cel" x="310" y="72">135</text>
+<text class="cel" x="398" y="72">2026-09-18</text>
+<text class="cel" x="16" y="98">FacundoChacon</text>
+<text class="cel" x="310" y="98">40</text>
+<text class="cel" x="398" y="98">2026-09-18</text>
+<rect x="0" y="108" width="500" height="26" fill="#f6f8fa"/>
+<text class="cel" x="16" y="124">portfolio</text>
+<text class="cel" x="310" y="124">27</text>
+<text class="cel" x="398" y="124">2026-09-08</text>
+<text class="cel" x="16" y="150">arasaka-neon-wallpaper</text>
+<text class="cel" x="310" y="150">9</text>
+<text class="cel" x="398" y="150">2026-08-16</text>
+<rect x="0" y="160" width="500" height="26" fill="#f6f8fa"/>
+<text class="cel" x="16" y="176">Tienda-Electronica</text>
+<text class="cel" x="310" y="176">23</text>
+<text class="cel" x="398" y="176">2026-07-03</text>
+<text class="cel" x="16" y="202">Bodega</text>
+<text class="cel" x="310" y="202">39</text>
+<text class="cel" x="398" y="202">2026-07-03</text>
+<rect x="0" y="212" width="500" height="26" fill="#f6f8fa"/>
+<text class="cel" x="16" y="228">Trabajo-Practico-Integrador---Program…</text>
+<text class="cel" x="310" y="228">37</text>
+<text class="cel" x="398" y="228">2026-06-18</text>
+<text class="cel" x="16" y="254">shop-project</text>
+<text class="cel" x="310" y="254">51</text>
+<text class="cel" x="398" y="254">2026-06-04</text>
+<text class="tot" x="16" y="288">Total de commits: 454 en 8 repositorios publicos</text>
+<text class="note" x="16" y="306">Los repositorios privados no se incluyen (la API publica no los expone).</text>
+</svg>
