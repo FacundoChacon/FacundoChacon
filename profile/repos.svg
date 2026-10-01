@@ -6,23 +6,23 @@
 <text class="hdr" x="310" y="64">Commits</text>
 <text class="hdr" x="398" y="64">Ultima actividad</text>
 <rect x="0" y="56" width="500" height="26" fill="#f6f8fa"/>
-<text class="cel" x="16" y="72">FacundoChacon</text>
-<text class="cel" x="310" y="72">55</text>
-<text class="cel" x="398" y="72">2026-09-29</text>
-<text class="cel" x="16" y="98">CIMMA-DENTISTRY</text>
-<text class="cel" x="310" y="98">2</text>
-<text class="cel" x="398" y="98">2026-09-24</text>
+<text class="cel" x="16" y="72">portfolio</text>
+<text class="cel" x="310" y="72">32</text>
+<text class="cel" x="398" y="72">2026-09-30</text>
+<text class="cel" x="16" y="98">FacundoChacon</text>
+<text class="cel" x="310" y="98">56</text>
+<text class="cel" x="398" y="98">2026-09-30</text>
 <rect x="0" y="108" width="500" height="26" fill="#f6f8fa"/>
-<text class="cel" x="16" y="124">3-esquinas-frontend</text>
-<text class="cel" x="310" y="124">159</text>
+<text class="cel" x="16" y="124">CIMMA-DENTISTRY</text>
+<text class="cel" x="310" y="124">2</text>
 <text class="cel" x="398" y="124">2026-09-24</text>
-<text class="cel" x="16" y="150">calculadora-frontend</text>
-<text class="cel" x="310" y="150">1</text>
-<text class="cel" x="398" y="150">2026-09-20</text>
+<text class="cel" x="16" y="150">3-esquinas-frontend</text>
+<text class="cel" x="310" y="150">159</text>
+<text class="cel" x="398" y="150">2026-09-24</text>
 <rect x="0" y="160" width="500" height="26" fill="#f6f8fa"/>
-<text class="cel" x="16" y="176">portfolio</text>
-<text class="cel" x="310" y="176">27</text>
-<text class="cel" x="398" y="176">2026-09-08</text>
+<text class="cel" x="16" y="176">calculadora-frontend</text>
+<text class="cel" x="310" y="176">1</text>
+<text class="cel" x="398" y="176">2026-09-20</text>
 <text class="cel" x="16" y="202">Tienda-Electronica</text>
 <text class="cel" x="310" y="202">23</text>
 <text class="cel" x="398" y="202">2026-07-03</text>
@@ -33,6 +33,6 @@
 <text class="cel" x="16" y="254">Trabajo-Practico-Integrador---Program…</text>
 <text class="cel" x="310" y="254">37</text>
 <text class="cel" x="398" y="254">2026-06-18</text>
-<text class="tot" x="16" y="288">Total de commits: 486 en 14 repositorios publicos</text>
+<text class="tot" x="16" y="288">Total de commits: 492 en 14 repositorios publicos</text>
 <text class="note" x="16" y="306">Solo se muestran los 8 mas recientes. Los repositorios privados no se incluyen (la API publica no los expone).</text>
 </svg>
