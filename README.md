@@ -5,7 +5,10 @@
   enfocado en desarrollo Full Stack, automatización de scripts y bases de datos relacionales.
 </p>
 <p align="center">
-  <a href="https://www.linkedin.com/in/facundo-chacón-catalán-61362735a">
+  <a href="https://www.facucode.dev">
+    <img src="https://img.shields.io/badge/Portfolio-facucode.dev-2EA043?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/>
+  </a>
+  <a href="https://www.linkedin.com/in/facundo-chacon">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:chaconfacu2006@gmail.com">
@@ -13,7 +16,7 @@
   </a>
 </p>
 
-Sobre mí
+## Sobre mí
 
 
 🎓 Estudiante avanzado de Programación en la UTN FRM.
@@ -24,7 +27,7 @@ Sobre mí
 📍 Maipú, Mendoza, Argentina — disponibilidad de reubicación.
 
 
-Stack tecnológico
+## Stack tecnológico
 
 <p align="left">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
@@ -39,7 +42,7 @@ Stack tecnológico
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
   <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R"/>
 </p>
-Proyectos destacados
+## Proyectos destacados
 
 <table>
   <tr>
@@ -68,7 +71,7 @@ Proyectos destacados
     </td>
   </tr>
 </table>
-Estadísticas de GitHub
+## Estadísticas de GitHub
 
 <!--
   Estas tarjetas son archivos SVG generados automaticamente por un workflow
