@@ -8,7 +8,7 @@
   <a href="https://www.facucode.dev">
     <img src="https://img.shields.io/badge/Portfolio-facucode.dev-2EA043?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/>
   </a>
-  <a href="https://www.linkedin.com/in/facundo-chacon">
+  <a href="https://www.linkedin.com/in/facundo-chacon-61362735a">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:chaconfacu2006@gmail.com">
